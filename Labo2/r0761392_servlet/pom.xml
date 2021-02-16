@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ucll.servlet</groupId>
-    <artifactId>driesYperman_servlet</artifactId>
+    <artifactId>r0761392_servlet</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>driesYperman_servlet</name>
+    <name>r0761392_servlet</name>
     <packaging>war</packaging>
 
     <properties>
