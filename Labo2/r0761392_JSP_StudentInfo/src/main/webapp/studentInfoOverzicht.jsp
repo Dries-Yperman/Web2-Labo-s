@@ -14,31 +14,36 @@
 
 %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Student Info: Overzicht</title>
-    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
-<table>
-    <thead>
-    <tr>
-        <th>Naam</th>
-        <th>Voornaam</th>
-        <th>Leeftijd</th>
-        <th>Studierichting</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Janssens</td>
-        <td>Jan</td>
-        <td>24</td>
-        <td>Toegepaste Informatica</td>
-    </tr>
-    </tbody>
-</table>
+    <table>
+        <thead>
+        <tr>
+            <th>Naam</th>
+            <th>Voornaam</th>
+            <th>Leeftijd</th>
+            <th>Studierichting</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <%for (Student student : students) {%>
+        <tr>
+            <td><%=student.getNaam()%></td>
+            <td><%=student.getVoornaam()%></td>
+            <td><%=student.getLeeftijd()%></td>
+            <td><%=student.getStudierichting()%></td>
+        </tr>
+        <%}%>
+        </tbody>
+
+    </table>
 
 </body>
 </html>
